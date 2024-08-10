@@ -14,6 +14,7 @@ height: 36px;
 }
 #avgfor10table,#avgfor25table,#actualaveragetable{
   border-collapse: collapse;
+  table-layout: fixed;
 }
 #input1,#input2{
   background-color: lightpink;
@@ -28,5 +29,24 @@ height: 36px;
 
 #avgfor10,#avgfor25,#actualaveragediv{
   margin-bottom: 30px;
+}
+
+#finalbtn{
+  display: flex;
+}
+
+.screenshot{
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#finalbtndiv,#screenshotdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
 }
 
