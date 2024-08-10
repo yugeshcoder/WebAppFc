@@ -29,6 +29,7 @@ height: 36px;
 
 #avgfor10,#avgfor25,#actualaveragediv{
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 #finalbtn{

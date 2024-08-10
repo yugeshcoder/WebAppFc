@@ -354,95 +354,92 @@ setInterval(calc,5000);
 document.getElementById("submit").onclick = function(){
   
   if(t1 == 0){
-    document.getElementById("or1").innerHTML="";
+    document.getElementById("or1").remove();
   }
   if(t2 == 0){
-    document.getElementById("or2").innerHTML="";
+    document.getElementById("or2").remove();
   }
   if(t3 == 0){
-    document.getElementById("or3").innerHTML="";
+    document.getElementById("or3").remove();
   }
   if(t4 == 0){
-    document.getElementById("or4").innerHTML="";
+    document.getElementById("or4").remove();
   }
   if(t5 == 0){
-    document.getElementById("or5").innerHTML="";
+    document.getElementById("or5").remove();
   }
   if(t6 == 0){
-    document.getElementById("or6").innerHTML="";
+    document.getElementById("or6").remove();
   }
   if(t7 == 0){
-    document.getElementById("or7").innerHTML="";
+    document.getElementById("or7").remove();
   }
   if(t8 == 0){
-    document.getElementById("or8").innerHTML="";
+    document.getElementById("or8").remove();
   }
   if(t9 == 0){
-    document.getElementById("or9").innerHTML="";
+    document.getElementById("or9").remove();
   }
   if(t10 == 0){
-    document.getElementById("or10").innerHTML="";
+    document.getElementById("or10").remove();
   }
   if(t11 == 0){
-    document.getElementById("or11").innerHTML="";
+    document.getElementById("or11").remove();
   }
   if(t12 == 0){
-    document.getElementById("or12").innerHTML="";
+    document.getElementById("or12").remove();
   }
   if(t13 == 0){
-    document.getElementById("or13").innerHTML="";
-  }
-  if(t1 == 0){
-    document.getElementById("or1").innerHTML="";
+    document.getElementById("or13").remove();
   }
   if(t14 == 0){
-    document.getElementById("or14").innerHTML="";
+    document.getElementById("or14").remove();
   }
   if(t15 == 0){
-    document.getElementById("or15").innerHTML="";
+    document.getElementById("or15").remove();
   }
   if(t16 == 0){
-    document.getElementById("or16").innerHTML="";
+    document.getElementById("or16").remove();
   }
   if(t17 == 0){
-    document.getElementById("or17").innerHTML="";
+    document.getElementById("or17").remove();
   }
   if(t18 == 0){
-    document.getElementById("or18").innerHTML="";
+    document.getElementById("or18").remove();
   }
   if(t19 == 0){
-    document.getElementById("or19").innerHTML="";
+    document.getElementById("or19").remove();
   }
   if(t20 == 0){
-    document.getElementById("or20").innerHTML="";
+    document.getElementById("or20").remove();
   }
   if(t21 == 0){
-    document.getElementById("or21").innerHTML="";
+    document.getElementById("or21").remove();
   }
   if(t22 == 0){
-    document.getElementById("or22").innerHTML="";
+    document.getElementById("or22").remove();
   }
   if(t23 == 0){
-    document.getElementById("or23").innerHTML="";
+    document.getElementById("or23").remove();
   }
   if(t24 == 0){
-    document.getElementById("or24").innerHTML="";
+    document.getElementById("or24").remove();
   }
   if(t25 == 0){
-    document.getElementById("or25").innerHTML="";
+    document.getElementById("or25").remove();
   }
 
   if(t26 == 0){
-    document.getElementById("or26").innerHTML="";
+    document.getElementById("or26").remove();
   }
   if(t27 == 0){
-    document.getElementById("or27").innerHTML="";
+    document.getElementById("or27").remove();
   }
   if(t28 == 0){
-    document.getElementById("or28").innerHTML="";
+    document.getElementById("or28").remove();
   }
   if(t29 == 0){
-    document.getElementById("or29").innerHTML="";
+    document.getElementById("or29").remove();
   }
 }
 
@@ -498,4 +495,4 @@ let avg = 0;
     }
 
 
-   
+  
