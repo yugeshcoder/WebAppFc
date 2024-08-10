@@ -350,6 +350,19 @@ function calc(){
   document.getElementById("4tp").textContent = tp4;
   document.getElementById("3tp").textContent = tp3;
   document.getElementById("2tp").textContent = tp2;
+
+  document.getElementById("7p").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/10;
+  document.getElementById("6p").textContent = (p6+p7+p8+p9)/10;
+  document.getElementById("5p").textContent = (p10+p11+p12+p13)/10;
+  document.getElementById("4p").textContent = (p14+p15+p16+p17)/10;
+  document.getElementById("3p").textContent = (p18+p19+p20+p21)/10;
+
+  document.getElementById("7p2").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/25;
+  document.getElementById("6p2").textContent = (p6+p7+p8+p9)/25;
+  document.getElementById("5p2").textContent = (p10+p11+p12+p13)/25;
+  document.getElementById("4p2").textContent = (p14+p15+p16+p17)/25;
+  document.getElementById("3p2").textContent = (p18+p19+p20+p21)/25;
+  document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
 }
 calc();
 setInterval(calc,5000);
@@ -484,12 +497,6 @@ let avg = 0;
   document.getElementById("5f").textContent = Math.round((avg* .2)/50);
   document.getElementById("4f").textContent = Math.round((avg * .2)/40);
   document.getElementById("3f").textContent = Math.round((avg * .2)/30);
-
-  document.getElementById("7p").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/10;
-  document.getElementById("6p").textContent = (p6+p7+p8+p9)/10;
-  document.getElementById("5p").textContent = (p10+p11+p12+p13)/10;
-  document.getElementById("4p").textContent = (p14+p15+p16+p17)/10;
-  document.getElementById("3p").textContent = (p18+p19+p20+p21)/10;
   
   }
 
@@ -501,14 +508,6 @@ let avg = 0;
     document.getElementById("4f2").textContent = Math.round((avg * .2)/100);
     document.getElementById("3f2").textContent = Math.round((avg * .2)/75);
     document.getElementById("2f2").textContent = Math.round((avg * .15)/50);
-  
-    document.getElementById("7p2").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/25;
-    document.getElementById("6p2").textContent = (p6+p7+p8+p9)/25;
-    document.getElementById("5p2").textContent = (p10+p11+p12+p13)/25;
-    document.getElementById("4p2").textContent = (p14+p15+p16+p17)/25;
-    document.getElementById("3p2").textContent = (p18+p19+p20+p21)/25;
-    document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
-
     }
 
     let x = "bm1",y = "bpi1",z = "bi1",w = "bp1";
