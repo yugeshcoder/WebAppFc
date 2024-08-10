@@ -1,6 +1,32 @@
 #checkpage{
   width: 300px;
-  height: 100px;
   background-color: lightpink;
   margin-right: 20px;
 }
+#h1info{
+  text-align: center;
+  border-bottom: 2px solid red;
+  margin-bottom: 30px;
+}
+#avgfor10 th,tr,#avgfor25 th,tr,#actualaverage th,tr{
+width: 60px;
+height: 36px;
+}
+#avgfor10table,#avgfor25table,#actualaveragetable{
+  border-collapse: collapse;
+}
+#input1,#input2{
+  background-color: lightpink;
+  border: 1px solid red;
+}
+#s1b1,#s1b2,#s1b3,#submit{
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#avgfor10,#avgfor25,#actualaveragediv{
+  margin-bottom: 30px;
+}
+

@@ -1,6 +1,38 @@
 #inputpage{
-  width: 300px;
-  height: 100px;
   background-color: lightgoldenrodyellow;
   margin-right: 20px;
+  width: 300px;
+}
+#mod{
+  width: 130px;
+}
+
+#nam{
+  width: 130px;
+  margin-left: 4px;
+}
+#inputtablediv{ 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#inputtable{
+  width: 280px;
+  border-collapse: collapse;
+}
+#inputtable th,td{
+  border: 1px solid black;
+  padding: 10px;
+  font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8,#i9,#i10,#i11,#i12,#i13,#i14,#i15,#i16,#i17,#i18,#i19
+,#i20,#i21,#i22,#i23,#i24,#i25,#i26,#i27,#i28,#i29{
+  padding: 0px;
+}
+input[type="number"]{
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  background-color: lightgoldenrodyellow;
 }

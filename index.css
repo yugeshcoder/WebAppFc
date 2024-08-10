@@ -7,4 +7,17 @@
 }
 .DQ{
   text-align: center;
+  height: 50px;
+}
+.modeldiv{
+  margin-bottom: 10px;
+}
+.namediv{
+  margin-bottom: 10px;
+}
+.MN{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }

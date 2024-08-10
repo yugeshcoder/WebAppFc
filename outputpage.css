@@ -1,6 +1,33 @@
 #outputpage{
   width: 300px;
-  height: 100px;
   background-color: lightblue;
   margin-right: 20px;
+ 
+}
+#outputmod{
+  width: 130px;
+}
+
+#outputnam{
+  width: 130px;
+  margin-left: 4px;
+}
+#outputtablediv{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#outputtable{
+  width: 280px;
+  border-collapse: collapse;
+}
+#outputtable th,td{
+  border: 1px solid black;
+  padding: 10px;
+  font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.oshowtotal{
+  display: block;
 }
