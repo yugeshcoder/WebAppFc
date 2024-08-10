@@ -10,6 +10,10 @@ function check(){
 
   let q = document.getElementById("q").value;
   document.getElementById("outputlabelq").innerHTML = ` Q : <b style="font-size:1.5rem;">${q} </b>`;
+
+  document.getElementById("billdate").innerHTML = ` Date : <b style="font-size:1.5rem;">${date} </b>`;
+
+  document.getElementById("billname").innerHTML = ` Name : <b style="font-size:1.5rem;">${name} </b>`;
 }
 
 check();
@@ -457,6 +461,19 @@ btn.addEventListener('click', () => {
     })
 })
 
+const billbtn = document.querySelector('.billscreenshot');
+
+billbtn.addEventListener('click', () => {
+  html2canvas(document.querySelector('#billpage'))
+    .then(canvas => {
+      const url = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.setAttribute('download','imageName.png');
+      a.setAttribute('href',url);
+      a.click();
+    })
+})
+
 
 let avg = 0;
 
@@ -494,5 +511,201 @@ let avg = 0;
 
     }
 
+    let x = "bm1",y = "bpi1",z = "bi1",w = "bp1";
+    let i = 1;
+    document.getElementById("resetbtn").onclick = function (){
 
-  
+      var table = document.getElementById("billtable");
+      var row = table.insertRow(1);
+      row.innerHTML = `
+                  <td id="${x}"></td>
+                  <td id="${y}"></td>
+                  <td><input id="${z}" type="number"></td>
+                  <td id="${w}"></td>`;
+
+      document.getElementById(x).textContent = document.getElementById("mod").value;
+      document.getElementById(y).textContent = showtotal;
+      i++;
+      x = "bm" + i;
+      y = "bpi" + i;
+      z = "bi" + i;
+      w = "bp" + i;
+
+
+
+
+      document.getElementById("outputtable").innerHTML = `
+                  <tr>
+                    <th>FEET</th>
+                    <th>PIECES</th>
+                    <th>TOTAL</th>
+                  </tr>
+                  <tr id="or26">
+                    <td id="of26">9.0</td>
+                    <td id="op26"></td>
+                    <td id="t26"></td>
+                  </tr>
+                  <tr id="or27">
+                    <td id="of27">8.9</td>
+                    <td id="op27"></td>
+                    <td id="t27"></td>
+                  </tr>
+                  <tr id="or28">
+                    <td id="of28">8.6</td>
+                    <td id="op28"></td>
+                    <td id="t28"></td>
+                  </tr>
+                  <tr id="or29">
+                    <td id="of29">8.3</td>
+                    <td id="op29"></td>
+                    <td id="t29"></td>
+                  </tr>  
+                  <tr id="or1">
+                    <td id="of1">8.0</td>
+                    <td id="op1"></td>
+                    <td id="t1"></td>
+                  </tr>
+                  <tr id="or2">
+                    <td id="of2">7.9</td>
+                    <td id="op2"></td>
+                    <td id="t2"></td>
+                  </tr>
+                  <tr id="or3">
+                    <td id="of3">7.6</td>
+                    <td id="op3"></td>
+                    <td id="t3"></td>
+                  </tr>
+                  <tr id="or4">
+                    <td id="of4">7.3</td>
+                    <td id="op4"></td>
+                    <td id="t4"></td>
+                  </tr>
+                  <tr id="or5">
+                    <td id="of5">7.0</td>
+                    <td id="op5"></td>
+                    <td id="t5"></td>
+                  </tr>
+                  <tr id="or6">
+                    <td id="of6">6.9</td>
+                    <td id="op6"></td>
+                    <td id="t6"></td>
+                  </tr>
+                  <tr id="or7">
+                    <td id="of7">6.6</td>
+                    <td id="op7"></td>
+                    <td id="t7"></td>
+                  </tr>
+                  <tr id="or8">
+                    <td id="of8">6.3</td>
+                    <td id="op8"></td>
+                    <td id="t8"></td>
+                  </tr>
+                  <tr id="or9">
+                    <td id="of9">6.0</td>
+                    <td id="op9"></td>
+                    <td id="t9"></td>
+                  </tr>
+                  <tr id="or10">
+                    <td id="of10">5.9</td>
+                    <td id="op10"></td>
+                    <td id="t10"></td>
+                  </tr>
+                  <tr id="or11">
+                    <td id="of11">5.6</td>
+                    <td id="op11"></td>
+                    <td id="t11"></td>
+                  </tr>
+                  <tr id="or12">
+                    <td id="of12">5.3</td>
+                    <td id="op12"></td>
+                    <td id="t12"></td>
+                  </tr>
+                  <tr id="or13">
+                    <td id="of13">5.0</td>
+                    <td id="op13"></td>
+                    <td id="t13"></td>
+                  </tr>
+                  <tr id="or14">
+                    <td id="of14">4.9</td>
+                    <td id="op14"></td>
+                    <td id="t14"></td>
+                  </tr>
+                  <tr id="or15">
+                    <td id="of15">4.6</td>
+                    <td id="op15"></td>
+                    <td id="t15"></td>
+                  </tr>
+                  <tr id="or16">
+                    <td id="of16">4.3</td>
+                    <td id="op16"></td>
+                    <td id="t16"></td>
+                  </tr>
+                  <tr id="or17">
+                    <td id="of17">4.0</td>
+                    <td id="op17"></td>
+                    <td id="t17"></td>
+                  </tr> 
+                  <tr id="or18">
+                    <td id="of18">3.9</td>
+                    <td id="op18"></td>
+                    <td id="t18"></td>
+                  </tr>
+                  <tr id="or19">
+                    <td id="of19">3.6</td>
+                    <td id="op19"></td>
+                    <td id="t19"></td>
+                  </tr>
+                  <tr id="or20">
+                    <td id="of20">3.3</td>
+                    <td id="op20"></td>
+                    <td id="t20"></td>
+                  </tr>
+                  <tr id="or21">
+                    <td id="of21">3.0</td>
+                    <td id="op21"></td>
+                    <td id="t21"></td>
+                  </tr>
+                  <tr id="or22">
+                    <td id="of22">2.9</td>
+                    <td id="op22"></td>
+                    <td id="t22"></td>
+                  </tr>
+                  <tr id="or23">
+                    <td id="of23">2.6</td>
+                    <td id="op23"></td>
+                    <td id="t23"></td>
+                  </tr>
+                  <tr id="or24">
+                    <td id="of24">2.3</td>
+                    <td id="op24"></td>
+                    <td id="t24"></td>
+                  </tr>
+                  <tr id="or25">
+                    <td id="of25">2.0</td>
+                    <td id="op25"></td>
+                    <td id="t25"></td>
+                  </tr>`;
+
+                  p1 = p2 = p3 = p4 = p5= p6 = p7= p8= p9= p10= p11= p12 =p13 =p14 =p15 = p16 = p17 =p18 = p19 =p20 =p21 =p22 =p23 =p24 =p25 =p26 = p27 =p28 =p29 = 0;
+                  t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 = t17 =t18 = t19 =t20 =t21 =t22 =t23 =t24 =t25 =t26 = t27 =t28 =t29 = 0;
+                  i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
+              
+                  calc();           
+    }
+
+    document.getElementById("billbtn").onclick = function(){
+      let y = "bpi1",z = "bi1",w = "bp1";
+      let j = 1;
+      let total = 0;
+      for(let k = 1; k < i; k++){
+        let sum =Number(document.getElementById(y).textContent) +
+                 Number(document.getElementById(z).textContent);
+            document.getElementById(w).textContent = sum;     
+            total += sum;
+            j++;
+            y = "bpi" + j;
+            z = "bi" + j;
+            w = "bp" + j;
+      }
+      document.getElementById("billtotal").textContent = `Total-Amount : ₹${total}`;
+    }

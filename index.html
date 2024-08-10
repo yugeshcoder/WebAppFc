@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="outputpage.css">
   <link rel="stylesheet" href="checkpage.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="billpage.css">
 </head>
 <body>
-  <div id="index">
-      <div id="outputpage">
+  <main id="index">
+      <section id="outputpage">
               <div class="DQ">
                 <label id="outputlabeldate" for="date">Date:<input id="date" type="date"></label>
                 <div class="divforq">
@@ -212,8 +213,8 @@
                 </table>
                 <div class="oshowtotal"><h1 id="oshowtotal"></h1></div>
               </div>
-      </div>
-      <div id="inputpage">
+      </section>
+      <section id="inputpage">
               <div class="DQ">
                 <label id="labeldate" for="date">Date:<input id="date" type="date"></label>
                 <div class="divforq">
@@ -473,12 +474,12 @@
                 </table>
               </div>
               <div><h1 id="showtotal"></h1></div>
-      </div>
-      <div id="checkpage">
+      </section>
+      <section id="checkpage">
         <div id="h1info"><h1>Average-Check-Tool</h1></div>
         <div id="avgfor10">
           <div id="avgfor10info">
-            <label><b style="font-size: 1.8em;">FOR 10 P: </b></label>
+            <label><b style="font-size: 1.25em;">FOR 10 P: </b></label>
             <input id="input1" type="number">
             <button id="s1b1"> enter </button>
           </div>
@@ -508,7 +509,7 @@
         </div>
         <div id="avgfor25">
           <div id="avgfor25info">
-            <label><b style="font-size: 1.8em;">FOR 25 P: </b></label>
+            <label><b style="font-size: 1.25em;">FOR 25 P: </b></label>
             <input id="input2" type="number">
             <button id="s1b2"> enter </button>
           </div>
@@ -576,14 +577,49 @@
         </div>
         <div id="finalbtn">
           <div id="finalbtndiv">
-            <button id="submit">Enter</button>
+            <button id="submit">Feet</button>
           </div>
           <div id="screenshotdiv">
-            <button onclick="takescreenshot()"class="screenshot">Screenshot</button>
+            <button onclick="takescreenshot()"class="screenshot">Feet Screenshot</button>
           </div>
         </div>
-      </div>
-  </div>
+        <div id="reset">
+          <button id="resetbtn">RESET</button>
+        </div>
+        <div id="bill">
+          <div id="billdiv">
+            <button id="billbtn">Bill</button>
+          </div>
+          <div id="billpic">
+            <button id="billpicbtn" onclick="takescreenshot()"class="billscreenshot">Bill Screenshot</button>
+          </div>
+        </div>
+      </section>
+      <section id="billpage">
+        <div id="billdatediv">
+          <h3 id="billdate"></h3>
+        </div>
+        <div id="billnamediv">
+          <h2 id="billname"></h2>
+        </div>
+        <div id="billtag">
+          <h3>BILL</h3>
+        </div>
+        <div id="billtablediv">
+          <table id="billtable">
+            <tr>
+              <th>Model</th>
+              <th>Pieces</th>
+              <th>Price/<sub>feet</sub></th>
+              <th>Amount</th>
+            </tr>
+          </table>
+        </div>
+        <div id="billtotaldiv">
+          <h1 id="billtotal"></h1>
+        </div>
+      </section>
+    </main>
 
 
   <script src="html2canvas.js" type="text/javascript"></script>

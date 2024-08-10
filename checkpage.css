@@ -25,9 +25,11 @@ height: 36px;
 #s1b1,#s1b2,#s1b3,#submit{
   background-color: green;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
+  font-size: 1rem;
 }
+
 
 #avgfor10,#avgfor25,#actualaveragediv{
   margin-bottom: 30px;
@@ -42,15 +44,59 @@ height: 36px;
 .screenshot{
   background-color: red;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 40px;
 }
 
-#finalbtndiv,#screenshotdiv{
+
+#finalbtndiv,#screenshotdiv,#billdiv,#billpic{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 150px;
+}
+
+#reset{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#resetbtn{
+  padding: 20px 40px;
+  background-color: #f63854;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+#billbtn{
+  background-color: green;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color:white;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#billpicbtn{
+  background-color: red;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+#bill{
+  display: flex;
+  margin-right: 30px;
 }
 

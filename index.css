@@ -1,6 +1,6 @@
 #index{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .divforq{
   display: inline-block;
@@ -22,3 +22,4 @@
   align-items: center;
   margin-top: 10px;
 }
+
