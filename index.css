@@ -1,7 +1,7 @@
 #index{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 1337px;
+  position: absolute;
 }
 .divforq{
   display: inline-block;
