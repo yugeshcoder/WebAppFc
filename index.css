@@ -7,8 +7,9 @@
   padding: 10px;
 }
 .DQ{
-  text-align: center;
+  display: flex;
   height: 50px;
+  padding: 0;
 }
 .modeldiv{
   margin-bottom: 10px;
