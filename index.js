@@ -713,6 +713,7 @@ let avg = 0;
     }
 
     document.getElementById("passwordbtn").onclick = function(){
+      let password = document.getElementById("password").value;
       if(password == "1357"){
       document.getElementById("passwordpage").style.zIndex = -1;
       document.getElementById("passwordpage").style.opacity = 0;
