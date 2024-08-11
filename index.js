@@ -712,14 +712,10 @@ let avg = 0;
       document.getElementById("billtotal").textContent = `Total-Amount : ₹${total}`;
     }
 
-    let pw = ["1234","5678"];
     document.getElementById("passwordbtn").onclick = function(){
-      let password = document.getElementById("password").value;
-      for(let i = 0; i < pw.length; i++){
-      if(password == pw[i]){
+      if(password == "1357"){
       document.getElementById("passwordpage").style.zIndex = -1;
       document.getElementById("passwordpage").style.opacity = 0;
-      pw.splice(i,1);
       }
     }
-    }
+  
